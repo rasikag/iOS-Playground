@@ -12,7 +12,23 @@ enum NameOfEnum {
     case Hello04, Hello05
 }
 
-// how to use 
+// how to use
 let giveMeValue : NameOfEnum = .Hello04
+
+
+enum BarCode {
+    case upc(Int, Int, Int, Int)
+    case qrCode(String)
+}
+
+var productBarCode = BarCode.upc(5, 5, 5, 5)
+productBarCode = .qrCode("Hello Rasika")
+
+switch productBarCode {
+case let .upc(numberSystem, manufacturer, product, check):
+        print("UPC \(numberSystem), \(manufacturer), \(product), \(check)")
+case let .qrCode(manufacturer):
+    print("QR code \(manufacturer)")
+}
 
 
