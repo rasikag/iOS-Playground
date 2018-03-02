@@ -51,6 +51,13 @@ enum SwithStatus {
 
 var swithStatus: SwithStatus = .off
 
+func flipSwitch(status: SwithStatus) -> SwithStatus{
+    if status == .off {
+        return .on
+    }
+    return .off
+}
 
+flipSwitch(status: swithStatus)
 
 
