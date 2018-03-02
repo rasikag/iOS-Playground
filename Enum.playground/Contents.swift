@@ -41,3 +41,16 @@ enum JediMasters: String {
 
 // by rawValue
 print(JediMasters.maceWindu.rawValue)
+
+
+
+enum SwithStatus {
+    case on
+    case off
+}
+
+var swithStatus: SwithStatus = .off
+
+
+
+
