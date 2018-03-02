@@ -32,3 +32,12 @@ case let .qrCode(manufacturer):
 }
 
 
+// Get raw value
+enum JediMasters: String {
+    case yoda = "Yoda"
+    case maceWindu = "Mace Windu"
+    case quiGonJinn = "Qui-Gon Jinn"
+}
+
+// by rawValue
+print(JediMasters.maceWindu.rawValue)
