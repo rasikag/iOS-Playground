@@ -60,4 +60,7 @@ func flipSwitch(status: SwithStatus) -> SwithStatus{
 
 flipSwitch(status: swithStatus)
 
+// resolve git error
+
+
 
