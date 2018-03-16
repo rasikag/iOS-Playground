@@ -14,15 +14,15 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func colorizeButtonWasPressed(_ sender: UIButton) {
+    @IBAction func colorizeButtonWasPressed(_ sender: Any) {
         
     }
     
-    @IBAction func wiggleBtnWasPressed(_ sender: UIButton) {
-        
+    @IBAction func wiggleBtnWasPressed(_ sender: Any) {
+        wiggleBtn.wiggle()
     }
     
-    @IBAction func dimBtnWasPressed(_ sender: UIButton) {
+    @IBAction func dimBtnWasPressed(_ sender: Any) {
         
     }
     
