@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func colorizeButtonWasPressed(_ sender: Any) {
-        
+        colorizeBtn.colorized()
     }
     
     @IBAction func wiggleBtnWasPressed(_ sender: Any) {
