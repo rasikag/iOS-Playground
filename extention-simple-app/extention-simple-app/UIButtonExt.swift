@@ -29,4 +29,16 @@ extension UIButton{
                 })
         }
     }
+    
+    func colorized() {
+        
+        let randomNumberArray = [CGFloat]()
+        let randomColor = UIColor(displayP3Red: randomNumberArray[0]/255,
+                                  green: randomNumberArray[1]/255,
+                                  blue: randomNumberArray[2]/255,
+                                  alpha: 1.0)
+        UIView.animate(withDuration: 0.3) {
+            self.backgroundColor = randomColor 
+        }
+    }
 }
