@@ -9,6 +9,7 @@
 import UIKit
 
 extension UIButton{
+    
     func wiggle() {
         let wiggleAnim = CABasicAnimation(keyPath: "position")
         wiggleAnim.duration = 0.05
@@ -17,5 +18,15 @@ extension UIButton{
         wiggleAnim.fromValue = CGPoint(x: self.center.x - 4.0, y: self.center.y)
         wiggleAnim.toValue = CGPoint(x: self.center.x + 4.0 , y: self.center.y)
         layer.add(wiggleAnim, forKey: "position ")
+    }
+    
+    func dim() {
+        UIView.animate(withDuration: 0.15, animations: {
+            self.alpha = 0.75
+        }){ (finished) in
+                UIView.animate(withDuration: 0.15, animations: {
+                    self.alpha = 1.0
+                })
+        }
     }
 }

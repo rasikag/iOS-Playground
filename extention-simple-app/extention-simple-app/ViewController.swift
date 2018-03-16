@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func dimBtnWasPressed(_ sender: Any) {
-        
+        dimBtn.dim()
     }
     
 }
