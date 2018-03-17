@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		780E1D1C205D02850053CD67 /* LeagueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780E1D1B205D02850053CD67 /* LeagueVC.swift */; };
+		780E1D1E205D02C40053CD67 /* SkillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780E1D1D205D02C40053CD67 /* SkillVC.swift */; };
 		7830D8E9205BFC69006D7AA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7830D8E8205BFC69006D7AA0 /* AppDelegate.swift */; };
-		7830D8EB205BFC69006D7AA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7830D8EA205BFC69006D7AA0 /* ViewController.swift */; };
+		7830D8EB205BFC69006D7AA0 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7830D8EA205BFC69006D7AA0 /* WelcomeVC.swift */; };
 		7830D8EE205BFC69006D7AA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7830D8EC205BFC69006D7AA0 /* Main.storyboard */; };
 		7830D8F0205BFC69006D7AA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7830D8EF205BFC69006D7AA0 /* Assets.xcassets */; };
 		7830D8F3205BFC69006D7AA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7830D8F1205BFC69006D7AA0 /* LaunchScreen.storyboard */; };
@@ -16,9 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		780E1D1B205D02850053CD67 /* LeagueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueVC.swift; sourceTree = "<group>"; };
+		780E1D1D205D02C40053CD67 /* SkillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillVC.swift; sourceTree = "<group>"; };
 		7830D8E5205BFC69006D7AA0 /* app-basketball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app-basketball.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7830D8E8205BFC69006D7AA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7830D8EA205BFC69006D7AA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7830D8EA205BFC69006D7AA0 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		7830D8ED205BFC69006D7AA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7830D8EF205BFC69006D7AA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7830D8F2205BFC69006D7AA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +41,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		780E1D19205D01620053CD67 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7830D8EA205BFC69006D7AA0 /* WelcomeVC.swift */,
+				780E1D1B205D02850053CD67 /* LeagueVC.swift */,
+				780E1D1D205D02C40053CD67 /* SkillVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		780E1D1A205D016B0053CD67 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7830D8DC205BFC69006D7AA0 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +77,10 @@
 		7830D8E7205BFC69006D7AA0 /* app-basketball */ = {
 			isa = PBXGroup;
 			children = (
-				7830D8FA205C03E7006D7AA0 /* Views */,
+				780E1D1A205D016B0053CD67 /* Model */,
+				780E1D19205D01620053CD67 /* Controller */,
+				7830D8FA205C03E7006D7AA0 /* View */,
 				7830D8E8205BFC69006D7AA0 /* AppDelegate.swift */,
-				7830D8EA205BFC69006D7AA0 /* ViewController.swift */,
 				7830D8EC205BFC69006D7AA0 /* Main.storyboard */,
 				7830D8EF205BFC69006D7AA0 /* Assets.xcassets */,
 				7830D8F1205BFC69006D7AA0 /* LaunchScreen.storyboard */,
@@ -67,12 +89,12 @@
 			path = "app-basketball";
 			sourceTree = "<group>";
 		};
-		7830D8FA205C03E7006D7AA0 /* Views */ = {
+		7830D8FA205C03E7006D7AA0 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				7830D8FB205C044F006D7AA0 /* BoarderButton.swift */,
 			);
-			path = Views;
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +169,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7830D8EB205BFC69006D7AA0 /* ViewController.swift in Sources */,
+				7830D8EB205BFC69006D7AA0 /* WelcomeVC.swift in Sources */,
+				780E1D1C205D02850053CD67 /* LeagueVC.swift in Sources */,
 				7830D8E9205BFC69006D7AA0 /* AppDelegate.swift in Sources */,
+				780E1D1E205D02C40053CD67 /* SkillVC.swift in Sources */,
 				7830D8FC205C044F006D7AA0 /* BoarderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,10 +15,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="app_basketball" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="app_basketball" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -97,10 +97,10 @@ league </string>
             </objects>
             <point key="canvasLocation" x="-100" y="128"/>
         </scene>
-        <!--View Controller-->
+        <!--LeagueVC-->
         <scene sceneID="WCz-po-q6D">
             <objects>
-                <viewController id="Vao-QT-9ln" sceneMemberID="viewController">
+                <viewController id="Vao-QT-9ln" customClass="LeagueVC" customModule="app_basketball" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uoI-QY-FOq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -213,10 +213,10 @@ league </string>
             </objects>
             <point key="canvasLocation" x="556.52173913043487" y="127.17391304347827"/>
         </scene>
-        <!--View Controller-->
+        <!--SkillVC-->
         <scene sceneID="YZm-4j-nLh">
             <objects>
-                <viewController id="uSp-d3-L9R" sceneMemberID="viewController">
+                <viewController id="uSp-d3-L9R" customClass="SkillVC" customModule="app_basketball" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Ny-4E-wut">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
