@@ -44,8 +44,8 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kgb-fL-IDA">
-                                <rect key="frame" x="87" y="267" width="240" height="87"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kgb-fL-IDA">
+                                <rect key="frame" x="87" y="267" width="240" height="69.666666666666686"/>
                                 <string key="text">Find the team in your city and dominate the 
 league </string>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
@@ -62,6 +62,9 @@ league </string>
                                 <state key="normal" title="GET STARTED">
                                     <color key="titleColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Vao-QT-9ln" kind="show" id="kZH-0z-Adb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -74,6 +77,7 @@ league </string>
                             <constraint firstItem="zEx-nx-pOL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ipg-eK-Cvb"/>
                             <constraint firstItem="kqy-j9-lKh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="LPC-2c-gcW"/>
                             <constraint firstItem="YwK-uS-NOu" firstAttribute="top" secondItem="h5e-H2-OCn" secondAttribute="bottom" id="LQN-oF-MC8"/>
+                            <constraint firstItem="Kgb-fL-IDA" firstAttribute="top" secondItem="YwK-uS-NOu" secondAttribute="bottom" constant="23" id="OGd-hM-doS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zEx-nx-pOL" secondAttribute="trailing" constant="20" id="QtN-mi-EdS"/>
                             <constraint firstItem="Kgb-fL-IDA" firstAttribute="width" secondItem="YwK-uS-NOu" secondAttribute="width" id="Rj9-H2-ARl"/>
                             <constraint firstItem="h5e-H2-OCn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="apR-LK-tTD"/>
@@ -171,15 +175,28 @@ league </string>
                                     <color key="titleColor" red="0.9951923077" green="0.9903846154" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95Q-ZV-xbt">
+                                <rect key="frame" x="16" y="10" width="29" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="29" id="GcV-vj-sAQ"/>
+                                    <constraint firstAttribute="height" constant="24" id="jma-Eo-ttw"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="backButton"/>
+                                <connections>
+                                    <segue destination="8YT-lz-ivZ" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="fDc-3H-Wut"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="VWM-cV-a7C" firstAttribute="bottom" secondItem="4bV-r8-uqp" secondAttribute="bottom" constant="20" id="PvF-bf-Stj"/>
                             <constraint firstItem="VWM-cV-a7C" firstAttribute="trailing" secondItem="0pQ-M9-gwL" secondAttribute="trailing" id="Q6E-An-rJc"/>
+                            <constraint firstItem="95Q-ZV-xbt" firstAttribute="top" secondItem="uoI-QY-FOq" secondAttribute="top" constant="10" id="SlF-nr-wv8"/>
                             <constraint firstItem="0pQ-M9-gwL" firstAttribute="top" secondItem="VWM-cV-a7C" secondAttribute="top" constant="20" id="Tmv-tQ-XuZ"/>
                             <constraint firstItem="gch-RN-Lgr" firstAttribute="top" secondItem="0pQ-M9-gwL" secondAttribute="bottom" constant="50" id="VQS-qc-tof"/>
                             <constraint firstItem="4bV-r8-uqp" firstAttribute="leading" secondItem="VWM-cV-a7C" secondAttribute="leading" constant="16" id="YpW-Ls-DXd"/>
                             <constraint firstItem="jdu-rV-iUc" firstAttribute="trailing" secondItem="VWM-cV-a7C" secondAttribute="trailing" id="Zwc-CF-nAG"/>
+                            <constraint firstItem="95Q-ZV-xbt" firstAttribute="leading" secondItem="VWM-cV-a7C" secondAttribute="leading" constant="16" id="dE6-zm-HVl"/>
                             <constraint firstItem="0pQ-M9-gwL" firstAttribute="leading" secondItem="uoI-QY-FOq" secondAttribute="leading" id="eTT-jv-xhm"/>
                             <constraint firstItem="jdu-rV-iUc" firstAttribute="bottom" secondItem="VWM-cV-a7C" secondAttribute="bottom" id="ep9-1e-bvv"/>
                             <constraint firstItem="VWM-cV-a7C" firstAttribute="trailing" secondItem="4bV-r8-uqp" secondAttribute="trailing" constant="16" id="hFh-4f-KNI"/>
@@ -192,8 +209,9 @@ league </string>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fic-zr-1vi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="8YT-lz-ivZ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="559.20000000000005" y="127.28635682158921"/>
+            <point key="canvasLocation" x="556.52173913043487" y="127.17391304347827"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="YZm-4j-nLh">
@@ -289,6 +307,7 @@ league </string>
         </scene>
     </scenes>
     <resources>
+        <image name="backButton" width="29" height="24"/>
         <image name="beginnerBallerBG" width="414" height="736"/>
         <image name="desiredLeagueBG" width="414" height="736"/>
         <image name="swooshLogo" width="119" height="20"/>
