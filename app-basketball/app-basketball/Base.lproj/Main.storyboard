@@ -139,6 +139,9 @@ league </string>
                                         <state key="normal" title="Mens">
                                             <color key="titleColor" red="0.9951923077" green="0.9903846154" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMensTapped:" destination="Vao-QT-9ln" eventType="touchUpInside" id="cOg-mU-jsg"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISu-qM-3j1" customClass="BoarderButton" customModule="app_basketball" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="73" width="382" height="55"/>
@@ -150,6 +153,9 @@ league </string>
                                         <state key="normal" title="Womens">
                                             <color key="titleColor" red="0.9951923077" green="0.9903846154" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWomensTapped:" destination="Vao-QT-9ln" eventType="touchUpInside" id="w9G-2b-PwM"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZN-AY-wl1" customClass="BoarderButton" customModule="app_basketball" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="146" width="382" height="55"/>
@@ -161,6 +167,9 @@ league </string>
                                         <state key="normal" title="Co-ed">
                                             <color key="titleColor" red="0.9951923077" green="0.9903846154" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoTapped:" destination="Vao-QT-9ln" eventType="touchUpInside" id="Q0D-Sj-xwO"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -211,6 +220,7 @@ league </string>
                         <viewLayoutGuide key="safeArea" id="VWM-cV-a7C"/>
                     </view>
                     <connections>
+                        <outlet property="nextBtn" destination="4bV-r8-uqp" id="V8Y-8X-KPS"/>
                         <segue destination="uSp-d3-L9R" kind="show" identifier="skillVCSegue" id="oKi-wh-a6j"/>
                     </connections>
                 </viewController>
