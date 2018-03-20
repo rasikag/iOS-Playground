@@ -29,6 +29,9 @@ class MainVC: UIViewController {
         calcBtn.addTarget(self,
                           action: #selector(MainVC.calculate),
                           for: .touchUpInside)
+        
+        wageTxt.inputAccessoryView = calcBtn
+        priceTxt.inputAccessoryView = calcBtn
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,6 +40,7 @@ class MainVC: UIViewController {
     }
 
     @objc func calculate(){
+        print("we are here ")
     }
 
 }
