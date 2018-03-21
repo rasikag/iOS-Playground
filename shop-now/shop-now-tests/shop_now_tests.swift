@@ -25,6 +25,10 @@ class shop_now_tests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
+    func testGetHours() {
+        XCTAssert(Wage.getHours(forWage: 25, andPrice: 1000) == 40)
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
