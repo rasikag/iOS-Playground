@@ -13,7 +13,18 @@
 		780DCA89205EDBF5000A899F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 780DCA88205EDBF5000A899F /* Assets.xcassets */; };
 		780DCA8C205EDBF5000A899F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 780DCA8A205EDBF5000A899F /* LaunchScreen.storyboard */; };
 		780DCA96205EE0BD000A899F /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780DCA95205EE0BD000A899F /* CurrencyTextField.swift */; };
+		7871D03E20618118006C7337 /* shop_now_tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7871D03D20618118006C7337 /* shop_now_tests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7871D04020618118006C7337 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 780DCA76205EDBF5000A899F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 780DCA7D205EDBF5000A899F;
+			remoteInfo = "shop-now";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		780DCA7E205EDBF5000A899F /* shop-now.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shop-now.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,20 @@
 		780DCA8B205EDBF5000A899F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		780DCA8D205EDBF5000A899F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		780DCA95205EE0BD000A899F /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
+		7871D03B20618117006C7337 /* shop-now-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "shop-now-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7871D03D20618118006C7337 /* shop_now_tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shop_now_tests.swift; sourceTree = "<group>"; };
+		7871D03F20618118006C7337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		780DCA7B205EDBF5000A899F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7871D03820618117006C7337 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				780DCA80205EDBF5000A899F /* shop-now */,
+				7871D03C20618118006C7337 /* shop-now-tests */,
 				780DCA7F205EDBF5000A899F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				780DCA7E205EDBF5000A899F /* shop-now.app */,
+				7871D03B20618117006C7337 /* shop-now-tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +106,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		7871D03C20618118006C7337 /* shop-now-tests */ = {
+			isa = PBXGroup;
+			children = (
+				7871D03D20618118006C7337 /* shop_now_tests.swift */,
+				7871D03F20618118006C7337 /* Info.plist */,
+			);
+			path = "shop-now-tests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,6 +135,24 @@
 			productReference = 780DCA7E205EDBF5000A899F /* shop-now.app */;
 			productType = "com.apple.product-type.application";
 		};
+		7871D03A20618117006C7337 /* shop-now-tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7871D04220618118006C7337 /* Build configuration list for PBXNativeTarget "shop-now-tests" */;
+			buildPhases = (
+				7871D03720618117006C7337 /* Sources */,
+				7871D03820618117006C7337 /* Frameworks */,
+				7871D03920618117006C7337 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7871D04120618118006C7337 /* PBXTargetDependency */,
+			);
+			name = "shop-now-tests";
+			productName = "shop-now-tests";
+			productReference = 7871D03B20618117006C7337 /* shop-now-tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -116,6 +166,11 @@
 					780DCA7D205EDBF5000A899F = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+					};
+					7871D03A20618117006C7337 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 780DCA7D205EDBF5000A899F;
 					};
 				};
 			};
@@ -133,6 +188,7 @@
 			projectRoot = "";
 			targets = (
 				780DCA7D205EDBF5000A899F /* shop-now */,
+				7871D03A20618117006C7337 /* shop-now-tests */,
 			);
 		};
 /* End PBXProject section */
@@ -145,6 +201,13 @@
 				780DCA8C205EDBF5000A899F /* LaunchScreen.storyboard in Resources */,
 				780DCA89205EDBF5000A899F /* Assets.xcassets in Resources */,
 				780DCA87205EDBF5000A899F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7871D03920618117006C7337 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,7 +224,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7871D03720618117006C7337 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7871D03E20618118006C7337 /* shop_now_tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7871D04120618118006C7337 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 780DCA7D205EDBF5000A899F /* shop-now */;
+			targetProxy = 7871D04020618118006C7337 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		780DCA85205EDBF5000A899F /* Main.storyboard */ = {
@@ -322,6 +401,38 @@
 			};
 			name = Release;
 		};
+		7871D04320618118006C7337 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8682589LC;
+				INFOPLIST_FILE = "shop-now-tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "idea-capsule.shop-now-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/shop-now.app/shop-now";
+			};
+			name = Debug;
+		};
+		7871D04420618118006C7337 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8682589LC;
+				INFOPLIST_FILE = "shop-now-tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "idea-capsule.shop-now-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/shop-now.app/shop-now";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -339,6 +450,15 @@
 			buildConfigurations = (
 				780DCA91205EDBF5000A899F /* Debug */,
 				780DCA92205EDBF5000A899F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7871D04220618118006C7337 /* Build configuration list for PBXNativeTarget "shop-now-tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7871D04320618118006C7337 /* Debug */,
+				7871D04420618118006C7337 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
