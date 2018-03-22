@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		7870ABF32063F48600AA71D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7870ABF22063F48600AA71D5 /* AppDelegate.swift */; };
-		7870ABF52063F48600AA71D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7870ABF42063F48600AA71D5 /* ViewController.swift */; };
+		7870ABF52063F48600AA71D5 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7870ABF42063F48600AA71D5 /* MainVC.swift */; };
 		7870ABF82063F48600AA71D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7870ABF62063F48600AA71D5 /* Main.storyboard */; };
 		7870ABFA2063F48600AA71D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7870ABF92063F48600AA71D5 /* Assets.xcassets */; };
 		7870ABFD2063F48600AA71D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7870ABFB2063F48600AA71D5 /* LaunchScreen.storyboard */; };
+		7870AC082064115900AA71D5 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7870AC072064115900AA71D5 /* CurrencyTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7870ABEF2063F48600AA71D5 /* how-many-hours.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "how-many-hours.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7870ABF22063F48600AA71D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7870ABF42063F48600AA71D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7870ABF42063F48600AA71D5 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		7870ABF72063F48600AA71D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7870ABF92063F48600AA71D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7870ABFC2063F48600AA71D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7870ABFE2063F48600AA71D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7870AC072064115900AA71D5 /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +71,7 @@
 		7870AC042063F57400AA71D5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7870ABF42063F48600AA71D5 /* ViewController.swift */,
+				7870ABF42063F48600AA71D5 /* MainVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -77,6 +79,7 @@
 		7870AC052063F58000AA71D5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7870AC072064115900AA71D5 /* CurrencyTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -160,7 +163,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7870ABF52063F48600AA71D5 /* ViewController.swift in Sources */,
+				7870AC082064115900AA71D5 /* CurrencyTextField.swift in Sources */,
+				7870ABF52063F48600AA71D5 /* MainVC.swift in Sources */,
 				7870ABF32063F48600AA71D5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
