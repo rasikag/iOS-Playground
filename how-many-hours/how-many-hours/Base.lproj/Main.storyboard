@@ -35,6 +35,15 @@
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Item Price" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KEQ-qP-yBp" customClass="CurrencyTextField" customModule="how_many_hours" customModuleProvider="target">
+                                <rect key="frame" x="30" y="180" width="315" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="BCH-NM-q7j"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -42,13 +51,21 @@
                             <constraint firstItem="8sq-f9-Oad" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="4cF-CF-Ita"/>
                             <constraint firstItem="P7x-kB-tUE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="8NQ-M5-aZo"/>
                             <constraint firstItem="P7x-kB-tUE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="Aga-qn-jOs"/>
+                            <constraint firstItem="KEQ-qP-yBp" firstAttribute="trailing" secondItem="P7x-kB-tUE" secondAttribute="trailing" id="Dcg-Lr-Ohh"/>
                             <constraint firstItem="P7x-kB-tUE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G7G-va-u19"/>
                             <constraint firstItem="8sq-f9-Oad" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KG5-4j-ScO"/>
                             <constraint firstItem="8sq-f9-Oad" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="M9B-H2-vEy"/>
+                            <constraint firstItem="KEQ-qP-yBp" firstAttribute="height" secondItem="P7x-kB-tUE" secondAttribute="height" id="QsD-1V-mJF"/>
+                            <constraint firstItem="KEQ-qP-yBp" firstAttribute="leading" secondItem="P7x-kB-tUE" secondAttribute="leading" id="ZTD-UW-jo0"/>
                             <constraint firstItem="8sq-f9-Oad" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dwL-u0-ggj"/>
+                            <constraint firstItem="KEQ-qP-yBp" firstAttribute="top" secondItem="P7x-kB-tUE" secondAttribute="bottom" constant="30" id="tC0-1t-x3a"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="priceTxt" destination="KEQ-qP-yBp" id="UeH-Ex-uK8"/>
+                        <outlet property="wageTxt" destination="P7x-kB-tUE" id="23O-uF-0ue"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
