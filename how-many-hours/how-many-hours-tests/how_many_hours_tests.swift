@@ -32,4 +32,8 @@ class how_many_hours_tests: XCTestCase {
         }
     }
     
+    func testGetHours(){
+        
+    }
+    
 }
