@@ -33,7 +33,7 @@ class how_many_hours_tests: XCTestCase {
     }
     
     func testGetHours(){
-        XCTAssert(Wage.getHours(forWage: <#T##Double#>, andPrice: <#T##Double#>))
+        XCTAssert(Wage.getHours(forWage: 25, andPrice: 100) == 4)
     }
     
 }
