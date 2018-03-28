@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78384F0E206BE9C700D7337A /* how_many_hours_tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78384F0D206BE9C700D7337A /* how_many_hours_tests.swift */; };
+		78384F16206BEA3F00D7337A /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78384F15206BEA3F00D7337A /* Wage.swift */; };
 		7870ABF32063F48600AA71D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7870ABF22063F48600AA71D5 /* AppDelegate.swift */; };
 		7870ABF52063F48600AA71D5 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7870ABF42063F48600AA71D5 /* MainVC.swift */; };
 		7870ABF82063F48600AA71D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7870ABF62063F48600AA71D5 /* Main.storyboard */; };
@@ -15,7 +17,21 @@
 		7870AC082064115900AA71D5 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7870AC072064115900AA71D5 /* CurrencyTextField.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		78384F10206BE9C700D7337A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7870ABE72063F48600AA71D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7870ABEE2063F48600AA71D5;
+			remoteInfo = "how-many-hours";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		78384F0B206BE9C700D7337A /* how-many-hours-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "how-many-hours-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78384F0D206BE9C700D7337A /* how_many_hours_tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = how_many_hours_tests.swift; sourceTree = "<group>"; };
+		78384F0F206BE9C700D7337A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78384F15206BEA3F00D7337A /* Wage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wage.swift; sourceTree = "<group>"; };
 		7870ABEF2063F48600AA71D5 /* how-many-hours.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "how-many-hours.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7870ABF22063F48600AA71D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7870ABF42063F48600AA71D5 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -27,6 +43,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		78384F08206BE9C700D7337A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7870ABEC2063F48600AA71D5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,10 +60,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78384F0C206BE9C700D7337A /* how-many-hours-tests */ = {
+			isa = PBXGroup;
+			children = (
+				78384F0D206BE9C700D7337A /* how_many_hours_tests.swift */,
+				78384F0F206BE9C700D7337A /* Info.plist */,
+			);
+			path = "how-many-hours-tests";
+			sourceTree = "<group>";
+		};
 		7870ABE62063F48600AA71D5 = {
 			isa = PBXGroup;
 			children = (
 				7870ABF12063F48600AA71D5 /* how-many-hours */,
+				78384F0C206BE9C700D7337A /* how-many-hours-tests */,
 				7870ABF02063F48600AA71D5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				7870ABEF2063F48600AA71D5 /* how-many-hours.app */,
+				78384F0B206BE9C700D7337A /* how-many-hours-tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,6 +121,7 @@
 		7870AC062063F58700AA71D5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				78384F15206BEA3F00D7337A /* Wage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -94,6 +129,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		78384F0A206BE9C700D7337A /* how-many-hours-tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78384F14206BE9C700D7337A /* Build configuration list for PBXNativeTarget "how-many-hours-tests" */;
+			buildPhases = (
+				78384F07206BE9C700D7337A /* Sources */,
+				78384F08206BE9C700D7337A /* Frameworks */,
+				78384F09206BE9C700D7337A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78384F11206BE9C700D7337A /* PBXTargetDependency */,
+			);
+			name = "how-many-hours-tests";
+			productName = "how-many-hours-tests";
+			productReference = 78384F0B206BE9C700D7337A /* how-many-hours-tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		7870ABEE2063F48600AA71D5 /* how-many-hours */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7870AC012063F48600AA71D5 /* Build configuration list for PBXNativeTarget "how-many-hours" */;
@@ -121,6 +174,11 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "idea-capsule";
 				TargetAttributes = {
+					78384F0A206BE9C700D7337A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7870ABEE2063F48600AA71D5;
+					};
 					7870ABEE2063F48600AA71D5 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -141,11 +199,19 @@
 			projectRoot = "";
 			targets = (
 				7870ABEE2063F48600AA71D5 /* how-many-hours */,
+				78384F0A206BE9C700D7337A /* how-many-hours-tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		78384F09206BE9C700D7337A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7870ABED2063F48600AA71D5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -159,17 +225,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		78384F07206BE9C700D7337A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78384F0E206BE9C700D7337A /* how_many_hours_tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7870ABEB2063F48600AA71D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7870AC082064115900AA71D5 /* CurrencyTextField.swift in Sources */,
+				78384F16206BEA3F00D7337A /* Wage.swift in Sources */,
 				7870ABF52063F48600AA71D5 /* MainVC.swift in Sources */,
 				7870ABF32063F48600AA71D5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		78384F11206BE9C700D7337A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7870ABEE2063F48600AA71D5 /* how-many-hours */;
+			targetProxy = 78384F10206BE9C700D7337A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7870ABF62063F48600AA71D5 /* Main.storyboard */ = {
@@ -191,6 +274,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		78384F12206BE9C700D7337A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8682589LC;
+				INFOPLIST_FILE = "how-many-hours-tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "idea-capsule.how-many-hours-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/how-many-hours.app/how-many-hours";
+			};
+			name = Debug;
+		};
+		78384F13206BE9C700D7337A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8682589LC;
+				INFOPLIST_FILE = "how-many-hours-tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "idea-capsule.how-many-hours-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/how-many-hours.app/how-many-hours";
+			};
+			name = Release;
+		};
 		7870ABFF2063F48600AA71D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -331,6 +446,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		78384F14206BE9C700D7337A /* Build configuration list for PBXNativeTarget "how-many-hours-tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78384F12206BE9C700D7337A /* Debug */,
+				78384F13206BE9C700D7337A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7870ABEA2063F48600AA71D5 /* Build configuration list for PBXProject "how-many-hours" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
