@@ -44,6 +44,22 @@
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PsW-b8-bt1">
+                                <rect key="frame" x="30" y="275" width="315" height="68.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="50"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFh-rQ-8IQ">
+                                <rect key="frame" x="152" y="348.5" width="71" height="23.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23.5" id="WBm-0S-bAM"/>
+                                    <constraint firstAttribute="width" constant="71" id="vys-nk-ivZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -55,9 +71,14 @@
                             <constraint firstItem="P7x-kB-tUE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G7G-va-u19"/>
                             <constraint firstItem="8sq-f9-Oad" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KG5-4j-ScO"/>
                             <constraint firstItem="8sq-f9-Oad" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="M9B-H2-vEy"/>
+                            <constraint firstItem="PsW-b8-bt1" firstAttribute="width" secondItem="KEQ-qP-yBp" secondAttribute="width" id="OAS-ST-RwH"/>
                             <constraint firstItem="KEQ-qP-yBp" firstAttribute="height" secondItem="P7x-kB-tUE" secondAttribute="height" id="QsD-1V-mJF"/>
+                            <constraint firstItem="PsW-b8-bt1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wrx-aD-swv"/>
                             <constraint firstItem="KEQ-qP-yBp" firstAttribute="leading" secondItem="P7x-kB-tUE" secondAttribute="leading" id="ZTD-UW-jo0"/>
+                            <constraint firstItem="LFh-rQ-8IQ" firstAttribute="top" secondItem="PsW-b8-bt1" secondAttribute="bottom" constant="5" id="ain-JU-UTP"/>
                             <constraint firstItem="8sq-f9-Oad" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dwL-u0-ggj"/>
+                            <constraint firstItem="LFh-rQ-8IQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eWx-2D-uvZ"/>
+                            <constraint firstItem="PsW-b8-bt1" firstAttribute="top" secondItem="KEQ-qP-yBp" secondAttribute="bottom" constant="45" id="phl-dh-p8k"/>
                             <constraint firstItem="KEQ-qP-yBp" firstAttribute="top" secondItem="P7x-kB-tUE" secondAttribute="bottom" constant="30" id="tC0-1t-x3a"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
