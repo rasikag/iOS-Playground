@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainController.swift
 //  cloth-shop
 //
 //  Created by Rasika Gayan  Gunarathna  on 30/3/18.
