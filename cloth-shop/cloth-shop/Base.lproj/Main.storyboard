@@ -24,11 +24,52 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cam-Xn-X39">
+                                <rect key="frame" x="0.0" y="64.5" width="375" height="538.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="145" id="djX-Nr-C1h">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="145"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="djX-Nr-C1h" id="s8t-ht-P6L">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="144.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="DQQ-94-Zs9">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="144.5"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeu-sD-ABW">
+                                                    <rect key="frame" x="90" y="60" width="194" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="Y8S-Cm-o1c"/>
+                                                        <constraint firstAttribute="width" constant="194" id="epX-y6-Non"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="21"/>
+                                                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="DQQ-94-Zs9" secondAttribute="trailing" id="6bH-VB-lGW"/>
+                                                <constraint firstItem="DQQ-94-Zs9" firstAttribute="leading" secondItem="s8t-ht-P6L" secondAttribute="leading" id="DNm-rG-W51"/>
+                                                <constraint firstItem="qeu-sD-ABW" firstAttribute="centerX" secondItem="s8t-ht-P6L" secondAttribute="centerX" id="axJ-zw-BKS"/>
+                                                <constraint firstItem="qeu-sD-ABW" firstAttribute="centerY" secondItem="s8t-ht-P6L" secondAttribute="centerY" id="bdi-l5-IRO"/>
+                                                <constraint firstAttribute="bottom" secondItem="DQQ-94-Zs9" secondAttribute="bottom" id="dRd-2D-itJ"/>
+                                                <constraint firstItem="DQQ-94-Zs9" firstAttribute="top" secondItem="s8t-ht-P6L" secondAttribute="top" id="p9t-2s-mdG"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="xD9-fz-w7m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="IAn-ta-AB9"/>
+                            <constraint firstItem="cam-Xn-X39" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Vbu-nK-PPj"/>
                             <constraint firstItem="xD9-fz-w7m" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="XBW-vc-Kdt"/>
+                            <constraint firstItem="cam-Xn-X39" firstAttribute="top" secondItem="xD9-fz-w7m" secondAttribute="bottom" constant="16" id="eYw-N5-CXf"/>
+                            <constraint firstItem="cam-Xn-X39" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="h7L-dC-aN3"/>
+                            <constraint firstItem="cam-Xn-X39" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iuL-u1-PCk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -61,4 +102,7 @@
             <point key="canvasLocation" x="133.59999999999999" y="-564.46776611694156"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="digital" width="1024" height="703"/>
+    </resources>
 </document>
