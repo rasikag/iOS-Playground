@@ -28,7 +28,7 @@
                                 <rect key="frame" x="0.0" y="64.5" width="375" height="538.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="145" id="djX-Nr-C1h">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="145" id="djX-Nr-C1h" customClass="CategoryCell" customModule="cloth_shop" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="145"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="djX-Nr-C1h" id="s8t-ht-P6L">
@@ -58,6 +58,10 @@
                                                 <constraint firstItem="DQQ-94-Zs9" firstAttribute="top" secondItem="s8t-ht-P6L" secondAttribute="top" id="p9t-2s-mdG"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="categoryImage" destination="DQQ-94-Zs9" id="hKJ-Kn-ZK0"/>
+                                            <outlet property="categoryTitle" destination="qeu-sD-ABW" id="GXu-Nq-GVV"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -74,6 +78,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="SHOP NOW" id="DqC-U5-xFi"/>
+                    <connections>
+                        <outlet property="categoryTable" destination="cam-Xn-X39" id="eKe-Yw-BdA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
