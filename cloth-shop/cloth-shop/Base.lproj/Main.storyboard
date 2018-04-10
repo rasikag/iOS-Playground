@@ -28,18 +28,18 @@
                                 <rect key="frame" x="0.0" y="64.5" width="375" height="538.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="145" id="djX-Nr-C1h" customClass="CategoryCell" customModule="cloth_shop" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="145"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="77" id="djX-Nr-C1h" customClass="CategoryCell" customModule="cloth_shop" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="77"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="djX-Nr-C1h" id="s8t-ht-P6L">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="144.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="76.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="DQQ-94-Zs9">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="144.5"/>
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="70.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeu-sD-ABW">
-                                                    <rect key="frame" x="90" y="60" width="194" height="25"/>
+                                                    <rect key="frame" x="90" y="26" width="194" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25" id="Y8S-Cm-o1c"/>
                                                         <constraint firstAttribute="width" constant="194" id="epX-y6-Non"/>
@@ -54,8 +54,8 @@
                                                 <constraint firstItem="DQQ-94-Zs9" firstAttribute="leading" secondItem="s8t-ht-P6L" secondAttribute="leading" id="DNm-rG-W51"/>
                                                 <constraint firstItem="qeu-sD-ABW" firstAttribute="centerX" secondItem="s8t-ht-P6L" secondAttribute="centerX" id="axJ-zw-BKS"/>
                                                 <constraint firstItem="qeu-sD-ABW" firstAttribute="centerY" secondItem="s8t-ht-P6L" secondAttribute="centerY" id="bdi-l5-IRO"/>
-                                                <constraint firstAttribute="bottom" secondItem="DQQ-94-Zs9" secondAttribute="bottom" id="dRd-2D-itJ"/>
-                                                <constraint firstItem="DQQ-94-Zs9" firstAttribute="top" secondItem="s8t-ht-P6L" secondAttribute="top" id="p9t-2s-mdG"/>
+                                                <constraint firstAttribute="bottom" secondItem="DQQ-94-Zs9" secondAttribute="bottom" constant="3" id="dRd-2D-itJ"/>
+                                                <constraint firstItem="DQQ-94-Zs9" firstAttribute="top" secondItem="s8t-ht-P6L" secondAttribute="top" constant="3" id="p9t-2s-mdG"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
