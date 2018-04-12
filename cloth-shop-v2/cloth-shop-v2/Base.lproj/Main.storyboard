@@ -103,7 +103,7 @@
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zZj-hN-gJV">
                                 <rect key="frame" x="0.0" y="69.5" width="375" height="533.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Qsi-p3-QgZ">
                                     <size key="itemSize" width="180" height="271"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -111,7 +111,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4Ze-3r-qtY">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4Ze-3r-qtY" customClass="ProductCell" customModule="cloth_shop_v2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="180" height="271"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -144,6 +144,7 @@
                                                 </label>
                                             </subviews>
                                         </view>
+                                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="bottomMargin" secondItem="N0H-OV-w0G" secondAttribute="bottom" constant="16" id="3ip-tw-Xlc"/>
                                             <constraint firstItem="MUk-wP-Vd9" firstAttribute="leading" secondItem="4Ze-3r-qtY" secondAttribute="leading" constant="8" id="7Qq-BS-3wy"/>
@@ -156,11 +157,16 @@
                                             <constraint firstItem="4qG-Ic-5ik" firstAttribute="top" secondItem="4Ze-3r-qtY" secondAttribute="top" id="sY5-Jf-ybe"/>
                                             <constraint firstItem="N0H-OV-w0G" firstAttribute="top" secondItem="MUk-wP-Vd9" secondAttribute="bottom" id="yus-Td-fSB"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="procutPrice" destination="N0H-OV-w0G" id="5hs-36-9zc"/>
+                                            <outlet property="productImage" destination="4qG-Ic-5ik" id="Hjn-3h-Rs7"/>
+                                            <outlet property="productTitle" destination="MUk-wP-Vd9" id="fQo-lP-cr4"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="hHi-hk-jrE" firstAttribute="trailing" secondItem="zZj-hN-gJV" secondAttribute="trailing" id="4rN-BZ-oKL"/>
                             <constraint firstItem="hHi-hk-jrE" firstAttribute="bottom" secondItem="zZj-hN-gJV" secondAttribute="bottom" id="PNq-XC-AL7"/>

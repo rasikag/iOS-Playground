@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78739683207FB72E00004017 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78739682207FB72E00004017 /* ProductCell.swift */; };
 		789086D9207E409B007F13D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789086D8207E409B007F13D6 /* AppDelegate.swift */; };
 		789086DB207E409B007F13D6 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789086DA207E409B007F13D6 /* CategoriesVC.swift */; };
 		789086DE207E409C007F13D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789086DC207E409C007F13D6 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		78739682207FB72E00004017 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		789086D5207E409B007F13D6 /* cloth-shop-v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cloth-shop-v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		789086D8207E409B007F13D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		789086DA207E409B007F13D6 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				789086ED207E76BD007F13D6 /* CategoryCell.swift */,
+				78739682207FB72E00004017 /* ProductCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				789086DB207E409B007F13D6 /* CategoriesVC.swift in Sources */,
 				789086D9207E409B007F13D6 /* AppDelegate.swift in Sources */,
 				789086EE207E76BD007F13D6 /* CategoryCell.swift in Sources */,
+				78739683207FB72E00004017 /* ProductCell.swift in Sources */,
 				789086F0207E7991007F13D6 /* Category.swift in Sources */,
 				789086F3207E7A90007F13D6 /* DataService.swift in Sources */,
 			);
