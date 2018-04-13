@@ -42,9 +42,37 @@ class DataService {
         Product(title: "Kickflip Studios Black", price: "$18", imageName: "shirt05.png")
     ]
 
+    private let digitalGoods = [Product]()
     
     func getCategories() -> [Category] {
         return categories
+    }
+    
+    func getProducts(forCategoryTitle title: String) -> [Product] {
+        switch title {
+        case "SHIRTS":
+            return getShirts()
+        case "HATS":
+            return getHats()
+        case "HOODIES":
+            return getHoodies()
+        case "DIGITAL":
+            return digitalGoods
+        default:
+            return getShirts()
+        }
+    }
+    
+    func getHats() -> [Product] {
+        return hats
+    }
+    
+    func getHoodies() -> [Product] {
+        return hoodies
+    }
+    
+    func  getShirts() -> [Product] {
+        return shirts
     }
     
 }
