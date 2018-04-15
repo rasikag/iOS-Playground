@@ -76,17 +76,17 @@
                     <navigationItem key="navigationItem" title="SHOP ONLINE" id="Lue-SC-wVB"/>
                     <connections>
                         <outlet property="categoryTable" destination="zQo-d3-YMS" id="dg1-qb-Eev"/>
-                        <segue destination="A7p-Xe-PtC" kind="show" id="PCQ-HD-Z9f"/>
+                        <segue destination="A7p-Xe-PtC" kind="show" identifier="ProductsVC" id="PCQ-HD-Z9f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="868" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--ProductsVC-->
         <scene sceneID="ggz-rZ-Lnm">
             <objects>
-                <viewController id="A7p-Xe-PtC" sceneMemberID="viewController">
+                <viewController id="A7p-Xe-PtC" customClass="ProductsVC" customModule="cloth_shop_v2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ean-8y-smT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
