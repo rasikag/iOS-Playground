@@ -111,7 +111,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4Ze-3r-qtY" customClass="ProductCell" customModule="cloth_shop_v2" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="4Ze-3r-qtY" customClass="ProductCell" customModule="cloth_shop_v2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="180" height="271"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -177,6 +177,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hHi-hk-jrE"/>
                     </view>
+                    <connections>
+                        <outlet property="productsCollection" destination="zZj-hN-gJV" id="3Rn-1E-wof"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lfg-NG-hsj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
